@@ -1,0 +1,89 @@
+/*TERMINAN VARIABLES, MIXINS, ETC.*/
+body {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+/*TERMINAN GLOBALES*/
+.main-container {
+  padding: 0 5%; }
+
+.header {
+  background-color: #DDDDDD;
+  height: 120px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .header__logo {
+    width: 250px; }
+    .header__logo img {
+      width: 100%; }
+  .header__slogan {
+    width: 250px;
+    position: relative;
+    top: 70%; }
+    .header__slogan img {
+      width: 100%; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px; }
+  .section__intro {
+    margin-bottom: 15px; }
+    .section__intro h2 {
+      font-family: 'Roboto', sans-serif;
+      color: #007c4c;
+      margin-bottom: 8px; }
+    .section__intro span {
+      font-family: 'PT Mono', monospace; }
+
+.main-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .main-card .card {
+    width: 350px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-right: 10px; }
+    .main-card .card__image img {
+      width: 100%;
+      border-radius: 3px; }
+    .main-card .card h4 {
+      font-family: 'Roboto', sans-serif;
+      color: #007c4c;
+      margin-bottom: 8px; }
+    .main-card .card p {
+      font-family: 'PT Mono', monospace;
+      text-align: justify; }
+
+@media screen and (max-width: 768px) {
+  .main-card {
+    display: flex; }
+  .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 560px) {
+  .main-container {
+    padding: 0; }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header__slogan {
+      position: static; }
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-card .card {
+      width: auto; } }
