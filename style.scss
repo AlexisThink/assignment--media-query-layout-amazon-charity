@@ -1,5 +1,5 @@
-@import url("./styles/vals");
-@import url("./styles/mixins");
+@import "styles/vals";
+@import "styles/mixins";
 body{
     margin: 0;
 }
@@ -39,6 +39,7 @@ p{
     &__intro{
         margin-bottom: 15px;
         h2{
+        img{
             @include title-style();
         }
         span{
@@ -69,6 +70,7 @@ p{
 
 }
 
+/*COMIENZAN LOS MEDIA QUERIES*/
 @media screen and (max-width: 1024){
     .card{
         width: 45%;
@@ -116,4 +118,5 @@ p{
             width: auto;
         }
     }
+}
 }
