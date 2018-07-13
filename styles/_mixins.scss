@@ -1,0 +1,39 @@
+@mixin simple-txt{
+    font-family: 'PT Mono', monospace;
+}
+@mixin title-style {
+    font-family: 'Roboto', sans-serif;
+    color: $green-dark;
+    margin-bottom: 8px;
+}
+@mixin header-config{
+    height: 120px;
+    padding: 20px 40px;
+}
+@mixin center-heder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin section-config {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+@mixin main-card-config {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+@mixin card-config {
+    width: 350px;
+    padding: 5px;
+
+    border: 1px solid gray;
+    border-radius: 3px;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
+}

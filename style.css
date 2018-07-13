@@ -63,13 +63,19 @@ p {
       font-family: 'PT Mono', monospace;
       text-align: justify; }
 
+@media screen and (max-width: 1024) {
+  .card {
+    width: 45%; } }
+
 @media screen and (max-width: 768px) {
   .main-card {
     display: flex; }
-  .card {
-    width: 300px;
+  .main-card {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main-card .card {
+      width: 45%; } }
 
 @media screen and (max-width: 560px) {
   .main-container {
